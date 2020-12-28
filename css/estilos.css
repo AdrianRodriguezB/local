@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@600&family=PT+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/*----------------------------Estilos Base----------------------------*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+.column {
+    width: 100%; 
+    
+}
+/*--------------------------------------Estilos Header--------------------------------------*/
+.main-header {
+    width: 100%;
+}
+.logo {
+    font-size: 1.8em;
+    color: #cf2e2e;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+.main-header__contactInfo__phone {
+    background: #cf2e2e;
+    color:  white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-header__contactInfo__address {
+    padding: 10px;
+    margin: 0;
+}
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+/*--------------------------------------Estilos del Menu--------------------------------------*/
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu {
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.8em;
+    
+}
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+.social-icon__link {
+    text-decoration: none;
+}
+.menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menu__linka {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu__link:hover {
+    background: #cf2e2e;
+}
+.menu__link--select {
+    background: #cf2e2e;
+    
+}
+.mostrar {
+    height: 196px;
+}
+/*--------------------------------------Estilos del Banner--------------------------------------*/
+.banner {
+    margin-top: -60px;
+    position: relative;
+    
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img {
+    width: 100%;
+    height: 500px;
+    overflow: cover;
+}
+
+.banner__content {
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*--------------------------------------Estilos de los articulos--------------------------------------*/
+.group--color .container {
+    background: #cf2e2e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+.column__title {
+    font-size: 1.3em;
+    
+}
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+    
+}
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #cf2e2e;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+.group__title {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+.pagina-web .column {
+    margin-bottom: 30px;
+}
+.pagina-web__img {
+    width: 200PX;
+    height: 200px;
+    margin: auto;
+    max-width: 350px;
+    border-radius: 50%;
+}
+.pagina-web__title {
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    list-style: none;
+
+}
+.pagina-web__txt {
+    text-align: left;
+    font-size: 1.1em;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.pagina-web__price {
+    font-size: 2.6em;
+    color: #cf2e2e;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.group__title2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+.tienda-online .column {
+    margin-bottom: 30px;
+}
+.tienda-online__img {
+    width: 200PX;
+    height: 200px;
+    margin: auto;
+    max-width: 350px;
+    border-radius: 50%;
+}
+.tienda-online__title {
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.tienda-online__txt {
+    text-align: left;
+    font-size: 1.1em;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.tienda-online__price {
+    font-size: 2.6em;
+    color: #cf2e2e;
+    font-weight: bold;
+    text-align: center;
+}
+/*--------------------------------------Estilos del Footer--------------------------------------*/
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy {
+    text-align: center;
+        margin: auto;
+        text-decoration: none;
+    margin-top: 15px;
+}
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+}
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+/*--------------------------------------Estilos del responsive--------------------------------------*/
+@media screen and (min-width:480px) {
+    .logo {
+        color: white;
+    }
+    .main-header__contactInfo {
+        text-align: right
+    }
+    .banner {
+        margin-top: -180px;
+        z-index: -1000;
+    }
+    .main-header__contactInfo__phone {
+        background: none;
+    }
+    .main-header__contactInfo__address {
+        color: white;
+    }
+    .column--50 {
+        width: 49%;
+        
+    }
+    .main-nav {
+/*        background: rgba(0,0,0,.85)*/
+    }
+    .banner__content {
+        font-size: 2em;
+    }
+    .main{
+        padding-bottom: 60px;
+    }
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    .main__about__description .btm {
+        margin: 0;
+    }
+    .pagina-web .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .pagina-web__img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .tienda-online .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .tienda-online__img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+    .column--50 {
+        width: 49%;
+    }
+    .column--50-25{
+        width: 49%;
+    }
+    .column--33{
+        width: 30%;
+    }
+    @media screen and (min-width:768px) {
+        .main__title {
+            font-size: 2.2em;
+        }
+        .main__about__description {
+            margin-top: 25px;
+        }
+        .main__about__description .column--50:nth-child(2){
+            font-size: 1em;
+        }
+        .main__about__description .column--50:nth-child(2){
+            line-height: 30px;
+        
+        }
+        .column--50-25 {
+            width: 24.5%; 
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .container {
+            width: 1200px;
+        }
+        .logo {
+            font-size: 2em;
+            padding: 0;
+        }
+        .main-header__contactInfo__phone,
+        .main-header__contactInfo__address {
+            padding-right: 0;
+            font-size: 1.15em;
+        }
+        .banner__img {
+    width: 150%;
+    height: 650px;
+    overflow: cover;
+}
+        .main-nav {
+            padding: 0;
+        }
+        .banner__content {
+            font-size: 2.5em;
+        }
+/*        .icon_menu {
+/*        display:  none;
+        }
+        .menu {
+            position: static;
+            display: flex;
+            height: auto;
+            width: auto;
+        }*/
+        .menu__link {
+            padding: 15px;
+        }
+        .group--color .container {
+         margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .main__title {
+            font-size: 2.5em;
+        }
+        
+    }
+}

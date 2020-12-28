@@ -1,0 +1,51 @@
+.column__tit {
+    font-size: 1.8em;
+    text-align: center;
+    justify-content: center;
+    border-top: 3px;
+    margin: 15px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+.column__o {
+    font-size: 1.3em;
+    border-top: 3px;
+    margin: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+.column__title1 {
+    font-size: 1.1em;
+    font-family: 'PT Sans', fantasy;
+    justify-content: center;
+    margin: 15px;
+}
+.cap__img {
+ margin: 15px;
+    border-radius: 10%;
+}
+/*--------------------------------------Estilos Header--------------------------------------*/
+
+ @media screen and (min-width:1024px) {
+    .column__tit {
+    font-size: 2em;
+    text-align: center;
+    border-top: 3px;
+    margin: 15px;
+    font-family: 'PT Sans', sans-serif;
+         justify-content: center;
+    
+}
+     .column__o {
+        font-size: 1.8em;
+         border-top: 3px;
+    margin: 15px;
+    font-family: 'PT Sans', sans-serif;
+}   
+     .column__title1 {
+    font-size: 1.7em;
+    font-family: 'PT Sans', fantasy;
+    justify-content: center;
+    
+}
+     
+    }

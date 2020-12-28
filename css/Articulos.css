@@ -1,0 +1,128 @@
+
+.btn1 {
+    
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    background: #cf2e2e;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+/*------------------------Banner--------------------------------*/
+.banner {
+    margin-top: 60px;
+    position: relative;
+    background: black;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1000;
+    top: 50;
+    background: black;
+}
+.banner1__img {
+    width: 160%;
+    height: 600px;
+    overflow: cover;
+}
+.banner1__content {
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.column__tit {
+    font-size: 1.8em;
+    
+}
+/*--------------------------------------------ARTICULO--------------------------------------------*/
+.container1--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+.column__titlePlan{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    color: #cf2e2e;
+}
+.group2--color .container {
+    background: #7c7c7c;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+    border-top: 0PX;
+}
+.main__titleP {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.main__title1 {
+    font-size: 1.8em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    
+}
+/*------------------------------------------------------------------------------------*/
+@media screen and (min-width:480px){
+    .column__tit {
+        margin: 10;
+        font-size: 2.7em;
+        text-align: center;
+        padding: 0;
+    }
+    .column__titlePlan {
+    margin: 0;
+    padding: 0;
+        font-size: 2em;
+        
+    }  
+    .container1--flex{
+    border: 5px solid #ddd;
+        padding: 30px;
+        margin-top: 100px;
+    }
+    .group2--color .container {
+    margin: 0;
+    padding: 10px;
+    margin-top: 100px;
+}
+    @media screen and (min-width:1024px){
+ .main__title1 {
+     font-size: 2.5em;
+    justify-content: space-between;
+     margin: 0;
+     margin-top: 0;
+     border-top: 0;
+}   
+        .main__titleP {
+            font-size: 2.5em;
+        }
+        .group2--color .container{
+            padding: 20;
+            justify-content: space-between;
+             display: block;
+    width: 100%;
+    max-width: 100%;
+        }
+    }
